@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html"><img src="/logo.png" alt="Logo da SpaceX">|</a>
+            <a href="/naves.html">The Spaceships</a> |
+            <a href="/contrate.html">Hire us</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <h2>Hire Us Now</h2>
+        <p>Leave a message to request one of our services and we will get back to you as soon as possible   
+        </p>
+        <br>
+        <form action="">
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name"> -
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+            </div>
+            <br>
+            <div>
+                <label for="nave">Spaceships</label>
+                <select name="nave" id="nave">
+                    <option value="falcon9">Falcon 9</option>
+                    <option value="falconheavy">Falcon Heavy</option>
+                </select> |
+                <label for="service">Type of Service: </label>
+                <input type="search" name="service" id="service" list="services">
+                <datalist id="services">
+                    <option value="1 Nam quis nulla. Integer malesuada"></option>
+                    <option value="2 In in enim a arcu imperdier malesuada"></option>
+                    <option value="3 Sed vei lectus. Donec odio uma"></option>
+                    <option value="4 Aeneam id metus id velit uliamcorper pulvinar"></option>
+                </datalist>    
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Send Message">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
