@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.man-content {
+    flex: 1 0 auto;
+}
+
+.card {
+    margin-bottom: 20px;
+}

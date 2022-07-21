@@ -1,0 +1,7 @@
+let nomeVelho = prompt("Qual o nome do mais velho?")
+let idadeVelho = parseInt(prompt("Qual a idade do mais velho?"))
+let nomeNovo = prompt("Qual o nome do mais novo?")
+let idadeNovo = parseInt(prompt("Qual a idade do mais novo?"))
+alert(`Nome do mais velho: ${nomeVelho}\nIdade: ${idadeVelho}`)
+alert(`Nome do mais novo: ${nomeNovo}\nIdade: ${idadeNovo}`)
+alert(`Diferença de idade: ${idadeVelho - idadeNovo} anos`)
