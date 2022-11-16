@@ -7,5 +7,9 @@ do {
             let soma = parseFloat(prompt("Digite o valor que deseja adicionar:"))
             qntdDinheiro += soma
             break
+        case "2":
+            let retirar = parseFloat(prompt("Digite o valor que deseja retirar:"))
+            qntdDinheiro -= retirar    
     }
-} while ()
+} while (opcao != "3")
+alert("encerrando...")
