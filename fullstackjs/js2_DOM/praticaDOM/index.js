@@ -7,29 +7,46 @@ function addContact() {
     const ul = document.createElement('ul')
 
     const contactLi = document.createElement('li')
-    contactLi.innerText = 'Nome: '
+    contactLi.innerHTML = '<label for="name-contact">Nome: </label>'
     const nameInput = document.createElement('input')
     nameInput.type = 'text'
     nameInput.name = 'name-contact'
+    nameInput.id = 'name-contact'
     contactLi.appendChild(nameInput)
     ul.appendChild(contactLi)
+    ul.appendChild(document.createElement('br'))
 
     const numberLi = document.createElement('li')
-    numberLi.innerText = 'Número: '
+    numberLi.innerHTML = '<label for="number-contact">Número: </label>'
     const numberInput = document.createElement('input')
     numberInput.type = 'tel'
     numberInput.name = 'number-contact'
+    numberInput.id = 'number-contact'
     numberInput.placeholder = '(xx)xxxxx-xxxx'
     numberLi.appendChild(numberInput)
     ul.appendChild(numberLi)
+    ul.appendChild(document.createElement('br'))
 
     const adressLi = document.createElement('li')
-    adressLi.innerText = 'Endereço: '
-    const adressinput = createElement('input')
-    adressinput.type = 'text'
-    adressinput.name = 'adress-contact'
-    adressLi.appendChild(adressinput)
+    adressLi.innerHTML = '<label for="adress-contact">Endereço: </label>'
+    const adressInput = document.createElement('input')
+    adressInput.type = 'text'
+    adressInput.name = 'adress-contact'
+    adressInput.id = 'adress-contact'
+    adressLi.appendChild(adressInput)
     ul.appendChild(adressLi)
+    ul.appendChild(document.createElement('br'))
 
     contactList.append(h3, ul)
+}
+
+function removeContact() {
+    const contactList = document.getElementById('contact-list')
+
+    const title = document.getElementsByTagName('h3')
+    const uls = document.getElementsByTagName('ul')
+
+    contactList.removeChild(title[title.length - 1])
+    contactList.removeChild(uls[uls.length - 1])
+
 }
