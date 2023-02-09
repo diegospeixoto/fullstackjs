@@ -23,6 +23,13 @@ function addContact() {
     numberLi.appendChild(numberInput)
     ul.appendChild(numberLi)
 
-    contactList.appendChild(h3)
-    contactList.appendChild(ul)
+    const adressLi = document.createElement('li')
+    adressLi.innerText = 'Endereço: '
+    const adressinput = createElement('input')
+    adressinput.type = 'text'
+    adressinput.name = 'adress-contact'
+    adressLi.appendChild(adressinput)
+    ul.appendChild(adressLi)
+
+    contactList.append(h3, ul)
 }
