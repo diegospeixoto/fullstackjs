@@ -7,6 +7,29 @@ form.addEventListener('submit', function(ev) {
     const adress = document.querySelector('input[name="adress"]').value
     const breadType = document.querySelector('select[name="breadType"]').value
     const main = document.querySelector('input[name="main"]').value
-    const observations = document.querySelector('textarea[name="observations"]')
+    const observations = document.querySelector('textarea[name="observations"]').value
 
+    let salad = ""
+    document.querySelectorAll('input[name="salad"]:checked').forEach(function(item){
+        salad = `- ${item.value}\n`
+    })
+
+    console.log({
+        name,
+        adress,
+        breadType,
+        main,
+        salad,
+        observations
+    })
+    
+    alert(
+        "Pedido Realizado!" +
+    "\nNome do cliente: " + name +
+    "\nEndereço de entrega: " + adress +
+    "\nTipo de pão: " + breadType +
+    "\nRecheio: \n - " + main + "\n" + salad +
+    "Observações: " + observations
+    )
 })
+
